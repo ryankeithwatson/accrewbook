@@ -11,3 +11,24 @@
  *= require_self
  *= require_tree .
  */
+
+body {
+	padding-top: 40px;
+}
+
+.status.hover {
+	background-color: #FAFAFA;
+}
+
+.status{
+	border-bottom: solid 1px #CCC;
+	padding: 5px 0; 
+}
+
+.status .admin {
+	display: none;
+}
+
+.status.hover .admin {
+	display: inline;
+}
