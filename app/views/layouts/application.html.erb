@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Accrewbook</title>
+  <title>Sqrl</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-	<div class="navbar navbar-fixed-top">
+	<div class="navbar navbar-inverse navbar-fixed-top">
 		<div class="navbar-inner">
 			<div class="container">
-			<a href="#" class="brand"> AccrewBook </a>
+			<a href="#" class="brand"> sqrl </a>
 			<ul class="nav">
-				<li><%= link_to 'All Statuses', statuses_path %></li>
+				<li><%= link_to 'Dashboard', statuses_path %></li>
+				<li><%= link_to 'Create Request', new_status_path %></li>
 			</ul>
 			<ul class="nav pull-right">
 				<% if user_signed_in? %>

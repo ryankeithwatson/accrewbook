@@ -1,4 +1,9 @@
 class Status < ActiveRecord::Base
-  attr_accessible :content, :user_id
+  attr_accessible :content, :user_id, :recipient_id, :recipient_name
   belongs_to :user
+
+  validates :content, presence: true,
+					  length: { minimum: 2 }
+
+  validates :user_id, presence: true		
 end

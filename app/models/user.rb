@@ -18,6 +18,7 @@ class User < ActiveRecord::Base
                             message: 'Must be formatted correctly.'
                            }
 
+  belongs_to :recipient_name, :class_name=> 'Status'  
 
   has_many :statuses
 
